@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css'
 import casino from '../components/Casino'
+import Navbar from '../components/navbar/Navbar'
 
 class App extends React.Component {
 constructor(props){
@@ -23,6 +24,7 @@ constructor(props){
 
   render () {
     return (
+      <Navbar/>
     <div className="App">
       {
         this.state.users.map((user,i) => <p key={i}>{user}</p>)
